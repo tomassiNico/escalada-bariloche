@@ -1,4 +1,4 @@
-[
+const areas = [
   {
     name: "Esandi",
     slug: "esandi",
@@ -186,3 +186,5 @@
     ]
   },
 ];
+
+export default areas;

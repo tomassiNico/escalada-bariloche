@@ -6,6 +6,11 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-color: #4CAF50;
+  --secondary-color: #757575;
+  --accent-color: #FF9800;
+  --neutral-color: #FFFFFF;
+
 }
 
 @media (prefers-color-scheme: dark) {
