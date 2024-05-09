@@ -1,86 +1,57 @@
 import areas from "@/data/areas";
+import styles from "@/app/_styles/page.module.css";
+import t from "./_lib/t";
+import Link from "next/link";
 
 export default function Home() {
-
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className={styles.container}>
+      <div className={styles['title-container']}>
+        <h1>
+          {t("home.climbing_guide")} <br /> {t("san_carlos_de_bariloche")}
+        </h1>
+        <p className={styles.explain}>{t("home.climbing_guide_explain")}</p>
+      </div>
 
-      {areas.map((area) => {
-        return (
-          <div key={area.name}>
-            <p>{area.name}</p>
+      <div className={styles['help-container']}>
+        <div className={styles['help-item']}>
+          <div className={styles.suggestionIcon}>WARNING ICON</div>
+          <h3>{t('home.suggestions')}</h3>
+          <p>{t('home.suggestions_explain')}</p>
+        </div>
+        <div className={styles['help-list']}>
+          <div className={styles['help-item']}>
+            <div className={styles.suggestionIcon}>HELMET ICON</div>
+            <p>{t('home.helmet_explain')}</p>
           </div>
-        )
-      })}
+          <div className={styles['help-item']}>
+            <div className={styles.suggestionIcon}>NO_FIRE ICON</div>
+            <p>{t('home.no_fire_explain')}</p>
+          </div>
+          <div className={styles['help-item']}>
+            <div className={styles.suggestionIcon}>GRADE ICON</div>
+            <p>{t('home.grade_explain')}</p>
+          </div>
+        </div>
+      </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className={styles['guide-container']}>
+        <h2>{t('home.guides')}</h2>
+        <p>{t('home.some_guides')}</p>
+        <div className={styles['areas-container']}>
+          {areas.map((area) => {
+            return (
+              <div key={area.name} className={styles['area-item']}>
+                <p className={styles['area-name']}>{area.name}</p>
+              </div>
+            )
+          })}
+        </div>
+        <div className={styles['button-container']}>
+          <Link href="#" className={styles.button}>
+            {t('home.go_to_areas')}
+          </Link>
+        </div>
       </div>
     </main>
   );

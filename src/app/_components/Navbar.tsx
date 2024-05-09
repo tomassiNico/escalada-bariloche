@@ -1,4 +1,4 @@
-import styles from "@/app/styles/_components/Navbar.module.css";
+import styles from "@/app/_styles/_components/Navbar.module.css";
 import t from "@/app/_lib/t";
 import Link from "next/link";
 import Image from "next/image";

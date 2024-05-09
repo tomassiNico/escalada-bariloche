@@ -185,6 +185,40 @@ const areas = [
       }
     ]
   },
+  {
+    name: "Calabozo",
+    slug: "calabozo",
+    climbing_types: ['Placa'],
+    route_types: ['sport'],
+    latitude: -41.15853,
+    longitude: -71.2626,
+    description: null,
+    sectors: [
+    ]
+  },
+  {
+    name: "Los Notros",
+    slug: "los-notros",
+    climbing_types: ['Placa'],
+    route_types: ['sport'],
+    latitude: -41.15853,
+    longitude: -71.2626,
+    description: null,
+    sectors: [
+    ]
+  }
+  ,
+  {
+    name: "Ruca Cura",
+    slug: "ruca-cura",
+    climbing_types: ['Placa'],
+    route_types: ['sport'],
+    latitude: -41.15853,
+    longitude: -71.2626,
+    description: null,
+    sectors: [
+    ]
+  }
 ];
 
 export default areas;
