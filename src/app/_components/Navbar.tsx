@@ -23,10 +23,10 @@ const Navbar = () => {
         />
         <ul className={styles["nav-links"]}>
           <li>
-            <Link href="#">{t("navbar.home")}</Link>
+            <Link href="/">{t("navbar.home")}</Link>
           </li>
           <li>
-            <Link href="#">{t("navbar.guide")}</Link>
+            <Link href="/guide">{t("navbar.guide")}</Link>
           </li>
           <li>
             <Link href="#">{t("navbar.project")}</Link>

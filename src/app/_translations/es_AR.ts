@@ -3,6 +3,8 @@ const es_AR = {
   'navbar.guide': 'Guia',
   'navbar.project': 'Proyecto',
   'navbar.contact': 'Contacto',
+  'footer.contact': 'Contacto',
+  'footer.links': 'Links',
   'home.climbing_guide': 'Guía de Escalada',
   'san_carlos_de_bariloche': 'San Carlos De Bariloche',
   'home.climbing_guide_explain': 'En Bariloche, contamos con una gran cantidad de sectores (+10) de escalada, tanto vía deportivas, mixtas, deportivas, boulder. Esta diversidad se refleja en una amplia variedad de grados y estilos, asegurando que cada escalador encuentre su desafío perfecto.',
@@ -14,6 +16,7 @@ const es_AR = {
   'home.guides': 'Guías de escalada',
   'home.some_guides': 'Estas son algunas de las areas que tenemos disponibles',
   'home.go_to_areas': 'Ver todas las areas',
+  'guide.available_areas': 'Areas de escalada en Bariloche',
 }
 
 export default es_AR;

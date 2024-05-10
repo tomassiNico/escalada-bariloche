@@ -70,15 +70,15 @@ export default function Home() {
         <div className={styles["areas-container"]}>
           {areas.map((area) => {
             return (
-              <div key={area.name} className={styles["area-item"]}>
+              <Link href={`/guide/${area.slug}`} key={area.name} className={styles["area-item"]}>
                 <Image src={area.cover} fill alt="cover" />
                 <p className={styles["area-name"]}>{area.name}</p>
-              </div>
+              </Link>
             );
           })}
         </div>
         <div className={styles["button-container"]}>
-          <Link href="#" className={styles.button}>
+          <Link href="/guide" className={styles.button}>
             {t("home.go_to_areas")}
           </Link>
         </div>
