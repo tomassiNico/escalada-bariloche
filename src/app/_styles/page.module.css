@@ -49,10 +49,16 @@
       border: 2px solid;
       border-radius: var(--border-radius);
       height: 240px;
+      position: relative;
 
       & .area-name {
         font-weight: 600;
-        font-size: 32px;
+        font-size: 48px;
+        z-index: 10;
+        color: var(--neutral-color);
+        background-color: rgb(0,0,0,0.4);
+        padding: var(--padding);
+        border-radius: var(--border-radius);
       }
     }
   }

@@ -7,6 +7,7 @@ const areas = [
     latitude: -41.15853,
     longitude: -71.2626,
     description: null,
+    cover: '/topos/esandi.jpg',
     sectors: [
       {
         name: "Esandi Izquierda",
@@ -194,6 +195,7 @@ const areas = [
     latitude: -41.15464,
     longitude: -71.40553,
     description: null,
+    cover: '/topos/calabozo.jpg',
     sectors: [
       {
         name: "La Fianza",
@@ -365,6 +367,7 @@ const areas = [
     latitude: -41.08354,
     longitude: -71.55156,
     description: null,
+    cover: '/topos/not_image.jpg',
     sectors: [
       {
         name: "S/N",
@@ -480,6 +483,7 @@ const areas = [
     latitude: -41.11626,
     longitude: -71.44513,
     description: null,
+    cover: '/topos/ruca_cura.jpg',
     sectors: [
       {
         name: "Alerta Sirena",
